@@ -33,6 +33,8 @@ python elastic.py -update urls
 
 _Note we use the same method and datasource to upload urls and domains, just domains is unique on url_
 
+![example](https://github.com/nopaixx/minithreadINTEL/blob/master/demo4.png)
+
 ## Query based
 
 python elastic.py --INDEX_NAME [list coma separated]

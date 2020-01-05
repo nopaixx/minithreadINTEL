@@ -1,0 +1,4 @@
+Done and documented in github
+
+https://github.com/nopaixx/minithreadINTEL
+
