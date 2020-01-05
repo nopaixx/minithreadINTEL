@@ -21,6 +21,8 @@ update you elastic home in envvars files
 
 python elastic.py --update ips
 
+![example](https://github.com/nopaixx/minithreadINTEL/blob/master/demo2.png)
+
 ## Update domains
 
 python elastic.py -update domains

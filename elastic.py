@@ -17,8 +17,9 @@ def process_update_ips():
     fetchURL = 'https://raw.githubusercontent.com/stamparm/ipsum/master/ipsum.txt'
     response = requests.get(fetchURL)
     ips = re.findall( r'[0-9]+(?:\.[0-9]+){3}', response.text )
-    ips = ips[0:100]
     print("{} ips found".format(len(ips)))
+    # just first 100 ips is ok my elastic is to slow..
+    ips = ips[0:100]
     # now is time to update elastic we can do it using requests but in this case 
     # we use elasticsearch library
     es = Elasticsearch(
@@ -54,6 +55,7 @@ def process_update(index):
         print("Start processing index: ", index)
         if index=='ips':
             process_update_ips()
+            print("Finished")
         # TODO OTHER INDEX LIKE DOMAINS ETC...
     else:
         raise RuntimeError('invalid index')
