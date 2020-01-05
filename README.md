@@ -42,3 +42,7 @@ python elastic.py --INDEX_NAME [list coma separated]
 python elastic.py --ips "1.1.1.1;123.123.123.123;104.244.79.181;69.158.207.141"
 
 ![example](https://github.com/nopaixx/minithreadINTEL/blob/master/demo1.png)
+
+python elastic.py --domains "pastebin.com;google.com"
+
+![example](https://github.com/nopaixx/minithreadINTEL/blob/master/demo3.png)
