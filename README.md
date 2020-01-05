@@ -39,4 +39,4 @@ python elastic.py -update hash
 
 python elastic.py --ips "1.1.1.1;123.123.123.123;104.244.79.181;69.158.207.141"
 
-[example]: demo1.png 'example query'
+[example]: https://github.com/nopaixx/minithreadINTEL/blob/master/demo1.png 'example query'
